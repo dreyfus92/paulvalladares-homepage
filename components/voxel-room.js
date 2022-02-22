@@ -12,7 +12,7 @@ const VoxelRoom = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
     const [renderer, setRenderer] = useState()
-    const [camera, setCamera] = useState()
+    const [_camera, setCamera] = useState()
     const [target] = useState(new THREE.Vector3(-0.5, 1.2, 0))
     const [initialCameraPosition] = useState(
         new THREE.Vector3(

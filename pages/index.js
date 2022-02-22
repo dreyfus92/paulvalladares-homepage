@@ -6,7 +6,6 @@ import {
     Heading,
     Image,
     useColorModeValue,
-    SimpleGrid,
     Link,
     List,
     ListItem,
@@ -18,7 +17,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from "../components/paragraph"
 import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
@@ -65,14 +63,14 @@ const Page = () => {
                         Work
                     </Heading>
                     <Paragraph>
-                        👋 &nbsp;Hi, I’m Paul Valladares, I am FrontEnd Developer.
-                        👀 &nbsp;I’m interested in
-                        frontend, backend, data analysis, I'm also a WEB3 enthusiast. 🌱 &nbsp;I’m currently learning
-                        React. 🤓 &nbsp;I’m looking to collaborate on any web development
+                        👋 &nbsp;Hi, I&apos;m Paul Valladares, I am a FrontEnd Developer.
+                        👀 &nbsp;I&apos;m interested in
+                        frontend, backend, data analysis, I&apos;m also a WEB3 enthusiast. 🌱 &nbsp;I&apos;m currently learning
+                        React. 🤓 &nbsp;I&apos;m looking to collaborate on any web development
                         projects.
                     </Paragraph>
                     <Box aling="center" my={4}>
-                        <NextLink href="/works">
+                        <NextLink href="/works" passHref>
                             <Button rightIcon={<ChevronRightIcon />} colorScheme="orange">
                                 My Portfolio
                             </Button>
@@ -89,7 +87,7 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2015</BioYear>
-                        Completed Bachelor’s degree of civil engineering in the Graduate School of Engineering at National Autonomous University of Mexico.
+                        Completed Bachelor&apos;s degree of civil engineering in the Graduate School of Engineering at National Autonomous University of Mexico.
                     </BioSection>
                     <BioSection>
                         <BioYear>2015</BioYear>
@@ -114,14 +112,14 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <Link href="https://github.com/dreyfus92" target="_blank">
+                            <Link href="https://github.com/dreyfus92" target="_blank" passHref>
                                 <Button variant="ghost" colorScheme="orange" leftIcon={<Icon as={IoLogoGithub} />}>
                                     @dreyfus92
                                 </Button>
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://twitter.com/soysarcasme" target="_blank">
+                            <Link href="https://twitter.com/soysarcasme" target="_blank" passHref>
                                 <Button variant="ghost" colorScheme="orange" leftIcon={<Icon as={IoLogoTwitter} />}>
                                     @soysarcasme
                                 </Button>
